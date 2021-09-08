@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android-MVI-Architecture</string>
+    <string name="fetch_user">Fetch User</string>
+</resources>
