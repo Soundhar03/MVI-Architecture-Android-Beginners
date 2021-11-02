@@ -98,9 +98,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun renderList(users: List<User>) {
+    private fun renderList(listOfUsers: List<User>) {
         recyclerView.visibility = View.VISIBLE
-        users.let { listOfUsers -> listOfUsers.let { adapter.addData(it) } }
-        adapter.notifyDataSetChanged()
+        adapter.let{
+            it.addData(listOfUsers)
+            it.notifyDataSetChanged()
+        }
     }
 }
